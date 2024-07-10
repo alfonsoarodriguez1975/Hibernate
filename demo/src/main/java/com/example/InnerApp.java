@@ -1,11 +1,15 @@
 package com.example;
 import java.util.UUID;
 import com.example.entity.Foo;
+
+import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.*;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+
 
 /**
  * Hello world!
@@ -14,6 +18,7 @@ import jakarta.persistence.Table;
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        setupHibernate();
     }
 
     public static void setupHibernate(){
