@@ -2,8 +2,11 @@ package com.example;
 import java.util.UUID;
 import com.example.entity.Foo;
 import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.*;
 import jakarta.persistence.Entity;
-i
+import jakarta.persistence.Table;
+
 /**
  * Hello world!
  *
